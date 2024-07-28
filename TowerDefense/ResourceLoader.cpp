@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "ResourceLoader.h"
 
+#include <filesystem>
+
 void ResourceLoader::Load(const std::string & directory)
 {
 	for (const auto & entry : fs::directory_iterator(directory))//iterate over files

@@ -2,7 +2,11 @@
 
 #include "pch.h"
 
-namespace fs = std::experimental::filesystem;
+#include <filesystem>
+//#include <experimental/filesystem>
+
+namespace fs = std::filesystem;
+
 /*Summary
 Singleton class to keep resources and load when required
 */
